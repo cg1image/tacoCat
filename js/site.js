@@ -47,9 +47,6 @@ function checkForPalindrome(userString){
     returnObj.reversed = revString;
 
     return returnObj;
-
-
-
 }
 
 //display a message to the string.

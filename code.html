@@ -80,11 +80,70 @@
                     </pre>
                 </div>
                 <div class="col-lg-4 logoFont">
-                    <p>The Code is structured in one function.</p>
+                    <p class="border-bottom border-dark">The Code is structured in one function.</p>
                     <h5>getValues</h5>
                     <p>getValues is a function that gets the starting values from the DOM</p>
                 </div>
             </div>
+
+            <div class="row row-cols-1 row-cols-lg-2">
+                <div class="col-lg-8 ">
+                    <pre class="line-numbers"><code class="language-javascript">
+                        function checkForPalindrome(userString){
+
+                            userString = userString.toLowerCase();
+                        
+                            //remove spaces and special characters
+                            let regex = /[^a-z0-9]/gi;
+                            userString = userString.replace(regex,"");
+                        
+                            let revString = []; //array
+                            let returnObj = {}; //object
+                        
+                            for(let index = userString.length -1; index >=0; index--){
+                                revString += userString[index];
+                        
+                            }
+                            //does userString = revString?
+                            if (revString == userString) {
+                                returnObj.msg = "Well done! You entered a palindrome!"
+                            } else {
+                               returnObj.msg = "Sorry! You did not enter a palindrome!" 
+                            } 
+                        
+                            returnObj.reversed = revString;
+                        
+                            return returnObj;
+                        }
+                    </code>
+                    </pre>
+                </div>
+                <div class="col-lg-4 logoFont">
+                    <p class="border-bottom border-dark">Logic Function</p>
+                    <h5></h5>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-lg-2">
+                <div class="col-lg-8 ">
+                    <pre class="line-numbers"><code class="language-javascript">
+                        function displayMessage(returnObj){
+
+                            document.getElementById("alertHeader").innerHTML.msg;
+                            document.getElementById("msg").innerHTML = `Your phrase reversed is: ${returnObj.reversed}`;
+                            document.getElementById("alert").classList.remove("invisible");
+                        
+                        }       
+                    </code>
+                    </pre>
+                </div>
+                <div class="col-lg-4 logoFont">
+                    <p class="border-bottom border-dark">Display Function</p>
+                    <h5></h5>
+                    <p></p>
+                </div>
+            </div>    
 
 
         </div>
