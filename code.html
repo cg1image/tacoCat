@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>App Name: A Coding Project By Cg1image</title>
+    <title>Taco Cat: A Coding Project By Cg1image</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -29,7 +29,7 @@
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand logoFont" href="#"><img class="mb-1 p-1" src="/img/CGLogo.svg"
-                class="d-inline-block align-text-top" width="40" height="40"> APP NAME</a>
+                class="d-inline-block align-text-top" width="40" height="40"> Taco Cat</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -58,25 +58,29 @@
     <!-- ==== Main Section ====-->
     <main class="flex-shrink-0">
         <div class="container py-5 px-5">
-            <h2 class="border-1 border-bottom border-dark pt-5 logoFont">The Code for APP NAME.</h2>
+            <h2 class="border-1 border-bottom border-dark pt-5 logoFont">The Code for Taco Cat.</h2>
             <div class="row row-cols-1 row-cols-lg-2">
                 <div class="col-lg-8 ">
                     <pre class="line-numbers"><code class="language-javascript">
-                        //starts or controller function
-function getValues(){
-    //get values from the page
-    let startValue = document.getElementById("startValue")
+                        function getValue(){
 
-
-    //we need to call generateNumbers
-
-    //we call displayNumbers
-}
+                            //make sure the alert is invisible
+                            document.getElementById("alert").classList.add("invisible");
+                        
+                            //get user string from the page
+                            let userString = document.getElementById("userString").value
+                        
+                            //check for a palindrome
+                            let returnObj = checkForPalindrome(userString);
+                            
+                            //display out message to the screen
+                            displayMessage(returnObj);
+                        }
                     </code>
                     </pre>
                 </div>
                 <div class="col-lg-4 logoFont">
-                    <p>The Cod is structured in one function.</p>
+                    <p>The Code is structured in one function.</p>
                     <h5>getValues</h5>
                     <p>getValues is a function that gets the starting values from the DOM</p>
                 </div>

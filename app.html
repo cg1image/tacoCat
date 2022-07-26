@@ -62,8 +62,8 @@
             <div class="row row-cols-1 row-cols-lg-2 ">
                 <div class="col ">
                     <h1 class="display-5  logoFont fw-bold lh-1 mb-3">Taco Cat: A coding project></h1>
-                    <h4 class="lead">Taco Cat is a plalindrome. A Palindrome is a word, phraze, or sequence that reads
-                        the same backward as forward. Write a program that checks if the phrae entered is a palindrome.
+                    <h4 class="lead">Taco Cat is a palindrome. A Palindrome is a word, phrase, or sequence that reads
+                        the same backward as forward. Write a program that checks if the phrase entered is a palindrome.
                     </h4>
                 </div>
 
@@ -72,15 +72,15 @@
                     <h5 class="border-1 border-bottom border-danager">Enter a phrase or word to check </h5>
                     <form class="row gx-3 gy-2">
                         <div class="col">
-                            <input id="userString" value="" type="text" class="form-control" placeholder="Enter A String"
-                                area-label="Enter A String">
+                            <input id="userString"  type="text" class="form-control" placeholder="Enter A String"
+                                aria-label="Enter A String">
                         </div>
                         <!--Call To Action Section-->
                         <div class="col-12">
                             <button type="button" id="btnSubmit" class="btn btn-danger">Check It?</button>
                         </div>
                         <div class="alert alert-danger mt-5 invisible fade show" id="alert" role="alert">
-                            <h4 class="alert-heading">Well Done! You've entered a Palindrome!</h4>
+                            <h4 id="alertHeader" class="alert-heading">Well Done! You've entered a Palindrome!</h4>
                             <hr>
                             <p class="mb-0" id="msg"></p>
                             <!-- Insert Message Here-->
@@ -125,7 +125,7 @@
     </script>
     <script src="js/site.js"></script>
     <script>
-       document.getElementById("btnSubmit").addEventListener("click",getValues); 
+       document.getElementById("btnSubmit").addEventListener("click",getValue); 
     </script>
 </body>
 
